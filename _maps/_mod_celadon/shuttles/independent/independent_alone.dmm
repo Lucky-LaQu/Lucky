@@ -104,6 +104,10 @@
 	icon_state = "0-8"
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/door/poddoor{
+	name = "Blast Door";
+	dir = 4
+	},
 /turf/open/floor/plating,
 /area/ship/bridge)
 "ll" = (
@@ -153,9 +157,9 @@
 "ry" = (
 /obj/structure/closet/crate/trashcart,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/spawner/lootdrop/waste/trash,
-/obj/effect/spawner/lootdrop/waste/trash,
-/obj/effect/spawner/lootdrop/waste/trash,
+/obj/effect/spawner/random/trash,
+/obj/effect/spawner/random/trash,
+/obj/effect/spawner/random/trash,
 /turf/open/floor/plasteel,
 /area/ship/bridge)
 "tK" = (

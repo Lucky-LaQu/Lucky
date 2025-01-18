@@ -171,18 +171,6 @@
 	crate_name = "holofield generator crate"
 	crate_type = /obj/structure/closet/crate/engineering
 
-/datum/supply_pack/machinery/shuttle_in_a_box
-	name = "Shuttle in a Box"
-	desc = "The bare minimum amount of machine and computer boards required to create a working spacecraft."
-	cost = 8000
-	contains = list(
-		/obj/item/circuitboard/computer/shuttle/helm,
-		/obj/item/circuitboard/machine/shuttle/smes,
-		/obj/item/circuitboard/machine/shuttle/engine/electric,
-		/obj/item/shuttle_creator
-	)
-	crate_name = "Shuttle in a Box"
-
 /datum/supply_pack/machinery/ion_thruster
 	name = "Ion Thruster Crate"
 	desc = "A crate containing an ion thruster and its precharger's electronics. For when you need a little extra thrust."
@@ -192,14 +180,16 @@
 	crate_name = "ion thruster crate"
 	crate_type = /obj/structure/closet/crate/engineering
 
-/datum/supply_pack/machinery/plasma_thruster
-	name = "Plasma Thruster Crate"
-	desc = "A crate containing a plasma thruster and its heater's electronics. For when you need a lot of extra thrust."
-	cost = 1500
-	contains = list(/obj/item/circuitboard/machine/shuttle/heater,
-					/obj/item/circuitboard/machine/shuttle/engine/plasma)
-	crate_name = "plasma thruster crate"
-	crate_type = /obj/structure/closet/crate/engineering
+// [CELADON-REMOVE] - CELADON_OUTPOST_CONSOLE - Удаляем дубликат двигателей
+// /datum/supply_pack/machinery/plasma_thruster
+// 	name = "Plasma Thruster Crate"
+// 	desc = "A crate containing a plasma thruster and its heater's electronics. For when you need a lot of extra thrust."
+// 	cost = 1500
+// 	contains = list(/obj/item/circuitboard/machine/shuttle/heater,
+// 					/obj/item/circuitboard/machine/shuttle/engine/plasma)
+// 	crate_name = "plasma thruster crate"
+// 	crate_type = /obj/structure/closet/crate/engineering
+// [/CELADON-REMOVE]
 
 /datum/supply_pack/machinery/combustion_thruster
 	name = "Combustion Thruster Crate"
