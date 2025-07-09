@@ -1824,7 +1824,9 @@
 /turf/open/floor/carpet/green,
 /area/ship/crew/dorm)
 "Pb" = (
-/obj/effect/spawner/random/vending/snack,
+/obj/machinery/vending/snack{
+	all_items_free = 1
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/central)
 "Pv" = (
@@ -2072,6 +2074,8 @@
 /obj/item/storage/box/ammo/c46x30mm/ap,
 /obj/item/storage/box/ammo/c46x30mm/ap,
 /obj/item/storage/box/ammo/c46x30mm/ap,
+/obj/item/storage/box/ammo/c46x30mm/ap,
+/obj/item/storage/box/ammo/a762_40,
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
 "Us" = (
@@ -2096,7 +2100,7 @@
 "UC" = (
 /obj/effect/decal/cleanable/blood/drip,
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/cockroach,
+/mob/living/basic/cockroach,
 /turf/open/floor/plasteel/dark,
 /area/ship/storage/eva)
 "UN" = (

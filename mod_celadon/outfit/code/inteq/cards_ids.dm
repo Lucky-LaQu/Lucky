@@ -1,6 +1,6 @@
 /obj/item/card/id/inteq
 	desc = "A inteq ID with no proper access to speak of."
-	icon = 'mod_celadon/_storge_icons/icons/obj/card.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/items/misc/cardinteq.dmi'
 	faction_icon = "bg_inteq"
 	icon_state = "inteqrt"
 
@@ -14,7 +14,7 @@
 	desc = "A inteq ID with no proper access to speak of.This one indicates a Rearguard"
 	icon_state = "inteqvanguard"
 	assignment = "Rearguard"
-	job_icon = "headofpersonnel"
+	job_icon = "captain"
 
 /obj/item/card/id/inteq/enfco
 	desc = "A inteq ID with no proper access to speak of.This one indicates a Enforcer Class One"

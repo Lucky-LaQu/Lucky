@@ -324,7 +324,6 @@
 /turf/open/floor/plasteel/white,
 /area/ruin/icemoon/tesla_lab/dorms)
 "bf" = (
-/obj/machinery/portable_atmospherics/canister/chlorine,
 /obj/machinery/atmospherics/components/unary/portables_connector/visible/layer2,
 /obj/item/wrench/crescent{
 	pixel_y = 10;
@@ -332,6 +331,9 @@
 	},
 /obj/effect/turf_decal/corner/opaque/solgovblue{
 	dir = 5
+	},
+/obj/machinery/portable_atmospherics/canister/chlorine{
+	icon_state = "green"
 	},
 /turf/open/floor/plasteel/white,
 /area/ruin/icemoon/tesla_lab/lab_halls)
@@ -675,7 +677,6 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
-/obj/item/clothing/head/solfed/solfed_officer_beret,
 /turf/open/floor/plasteel/dark,
 /area/ruin/icemoon/tesla_lab/armory)
 "da" = (
@@ -1745,10 +1746,6 @@
 /area/ruin/icemoon/tesla_lab/containment)
 "hs" = (
 /obj/structure/table,
-/obj/item/reagent_containers/food/drinks/beaglemug{
-	pixel_y = 8;
-	pixel_x = -4
-	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/item/reagent_containers/pill/happinesspsych{
 	pixel_x = 11;
@@ -1765,6 +1762,10 @@
 /obj/item/reagent_containers/pill/happinesspsych{
 	pixel_x = 5;
 	pixel_y = 3
+	},
+/obj/item/reagent_containers/food/drinks/mug{
+	pixel_y = 8;
+	pixel_x = -4
 	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ruin/icemoon/tesla_lab/office_two)
@@ -2563,13 +2564,21 @@
 /turf/open/floor/wood/icemoon,
 /area/ruin/icemoon/tesla_lab/office)
 "kM" = (
+/obj/item/gun/ballistic/automatic/pistol/cm23{
+	pixel_x = -12
+	},
 /obj/item/reagent_containers/pill/morphine{
 	pixel_y = -3;
 	pixel_x = -5
 	},
 /obj/effect/decal/cleanable/generic,
-/obj/effect/mob_spawn/human/corpse/solgov/sonnensoldner,
-/obj/item/gun/ballistic/automatic/pistol/solgov/no_mag,
+/obj/effect/mob_spawn/human/corpse/clip/minuteman/forcefem{
+	mob_name = "Alyssa Salata"
+	},
+/obj/effect/landmark/mission_poi/main{
+	already_spawned = 1;
+	mission_index = 2
+	},
 /turf/open/floor/plating,
 /area/ruin/icemoon/tesla_lab/armory)
 "kO" = (
@@ -3353,9 +3362,6 @@
 	pixel_y = 7;
 	pixel_x = -6
 	},
-/obj/item/reagent_containers/food/drinks/beaglemug{
-	pixel_y = 2
-	},
 /obj/item/radio/intercom/directional/east{
 	frequency = 1473
 	},
@@ -3371,6 +3377,9 @@
 	pixel_x = 2;
 	dir = 1;
 	id = "tls"
+	},
+/obj/item/reagent_containers/food/drinks/mug{
+	pixel_y = 2
 	},
 /turf/open/floor/wood/icemoon,
 /area/ruin/icemoon/tesla_lab/office)
@@ -3711,7 +3720,6 @@
 /obj/effect/turf_decal/spline/fancy/wood{
 	dir = 5
 	},
-/obj/item/clothing/under/solfed/solfed_officer_formal,
 /turf/open/floor/carpet/blue,
 /area/ruin/icemoon/tesla_lab/office)
 "qi" = (
@@ -5032,10 +5040,6 @@
 	pixel_x = 11;
 	pixel_y = -10
 	},
-/obj/item/reagent_containers/syringe/contraband/bath_salts{
-	pixel_y = 13;
-	pixel_x = 6
-	},
 /obj/item/reagent_containers/hypospray/medipen/survival{
 	pixel_y = -12;
 	pixel_x = -4
@@ -6228,7 +6232,6 @@
 	pixel_y = 10;
 	pixel_x = 6
 	},
-/obj/item/clothing/head/helmet/solfedm11,
 /turf/open/floor/plasteel/mono/dark,
 /area/ruin/icemoon/tesla_lab/armory)
 "Ax" = (
@@ -9641,6 +9644,7 @@
 	name = "Backup Blackbox Recorder";
 	desc = "Some kind of machine backup."
 	},
+/obj/effect/landmark/mission_poi/main/blackbox,
 /turf/open/floor/plating,
 /area/ruin/icemoon/tesla_lab/armory)
 "OY" = (

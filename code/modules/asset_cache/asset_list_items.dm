@@ -97,37 +97,38 @@
 	name = "paper"
 	assets = list(
 		// [CELADON-ADD] - CELADON_STAMPS
-		"stamp-inteq-celadon" = 'mod_celadon/_storge_icons/icons/png/large_stamp-inteq.png',
-		"inteq-mothership-stamp" = 'mod_celadon/_storge_icons/icons/png/inteq_mothership_stamp.png',
-		"solfed-corps-commander-stamp" = 'mod_celadon/_storge_icons/icons/png/sf_commander_stamp.png',
-		"solfed-captain" = 'mod_celadon/_storge_icons/icons/png/sf_captain_stamp.png',
-		"elysium-brigade-captain-stamp" = 'mod_celadon/_storge_icons/icons/png/elysium_brigade_stamp.png',
-		"elysium-republic-stamp" = 'mod_celadon/_storge_icons/icons/png/elysium_republic_stamp.png',
-		"elysium-avanpost-stamp" = 'mod_celadon/_storge_icons/icons/png/elysium_outpost_stamp.png',
-		"nt-cent-command-stamp" = 'mod_celadon/_storge_icons/icons/png/nano_trasen_central_command_stamp.png',
-		"nt-captain-stamp" = 'mod_celadon/_storge_icons/icons/png/nano_trasen_captain_stamp.png',
-		"syndicate-captain-stamp" = 'mod_celadon/_storge_icons/icons/png/syndicate_captain_stamp.png',
-		"stamp-df" = 'mod_celadon/_storge_icons/icons/png/large_stamp-df_generic.png',
-		"stamp-df_captain" = 'mod_celadon/_storge_icons/icons/png/large_stamp-df_captain.png',
-		"stamp-df_meddir" = 'mod_celadon/_storge_icons/icons/png/large_stamp-df_med_dir.png',
-		"stamp-ne" = 'mod_celadon/_storge_icons/icons/png/large_stamp-ne_generic.png',
-		"stamp-ne_captain" = 'mod_celadon/_storge_icons/icons/png/large_stamp-ne_captain.png',
-		"stamp-ne_engdir" = 'mod_celadon/_storge_icons/icons/png/large_stamp-ne_eng_dir.png',
+		"stamp-inteq-celadon" = 'mod_celadon/_storge_icons/icons/assets/png/large_stamp-inteq.png',
+		"inteq-mothership-stamp" = 'mod_celadon/_storge_icons/icons/assets/png/inteq_mothership_stamp.png',
+		"solfed-corps-commander-stamp" = 'mod_celadon/_storge_icons/icons/assets/png/sf_commander_stamp.png',
+		"solfed-captain" = 'mod_celadon/_storge_icons/icons/assets/png/sf_captain_stamp.png',
+		"elysium-brigade-captain-stamp" = 'mod_celadon/_storge_icons/icons/assets/png/elysium_brigade_stamp.png',
+		"elysium-republic-stamp" = 'mod_celadon/_storge_icons/icons/assets/png/elysium_republic_stamp.png',
+		"elysium-avanpost-stamp" = 'mod_celadon/_storge_icons/icons/assets/png/elysium_outpost_stamp.png',
+		"nt-cent-command-stamp" = 'mod_celadon/_storge_icons/icons/assets/png/nanotrasen_central_command_stamp.png',
+		"nt-captain-stamp" = 'mod_celadon/_storge_icons/icons/assets/png/nanotrasen_captain_stamp.png',
+		"syndicate-captain-stamp" = 'mod_celadon/_storge_icons/icons/assets/png/syndicate_captain_stamp.png',
+		"stamp-df" = 'mod_celadon/_storge_icons/icons/assets/png/large_stamp-df_generic.png',
+		"stamp-df_captain" = 'mod_celadon/_storge_icons/icons/assets/png/large_stamp-df_captain.png',
+		"stamp-df_meddir" = 'mod_celadon/_storge_icons/icons/assets/png/large_stamp-df_med_dir.png',
+		"stamp-ne" = 'mod_celadon/_storge_icons/icons/assets/png/large_stamp-ne_generic.png',
+		"stamp-ne_captain" = 'mod_celadon/_storge_icons/icons/assets/png/large_stamp-ne_captain.png',
+		"stamp-ne_engdir" = 'mod_celadon/_storge_icons/icons/assets/png/large_stamp-ne_eng_dir.png',
 		// [/CELADON-ADD]
-		"stamp-clown" = 'icons/stamp_icons/large_stamp-clown.png',
+		// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
+		"stamp-mime" = 'mod_celadon/_storge_icons/icons/assets/png/large_stamp-mime.png',
+		"stamp-clown" = 'mod_celadon/_storge_icons/icons/assets/png/large_stamp-clown.png',
+		// [/CELADON-ADD]
 		"stamp-deny" = 'icons/stamp_icons/large_stamp-deny.png',
 		"stamp-ok" = 'icons/stamp_icons/large_stamp-ok.png',
 		"stamp-void" = 'icons/stamp_icons/large_stamp-void.png',
-		"stamp-hop" = 'icons/stamp_icons/large_stamp-hop.png',
+		"stamp-fo" = 'icons/stamp_icons/large_stamp-fo.png',
 		"stamp-cmo" = 'icons/stamp_icons/large_stamp-cmo.png',
 		"stamp-ce" = 'icons/stamp_icons/large_stamp-ce.png',
 		"stamp-hos" = 'icons/stamp_icons/large_stamp-hos.png',
 		"stamp-rd" = 'icons/stamp_icons/large_stamp-rd.png',
 		"stamp-cap" = 'icons/stamp_icons/large_stamp-cap.png',
 		"stamp-qm" = 'icons/stamp_icons/large_stamp-qm.png',
-		"stamp-law" = 'icons/stamp_icons/large_stamp-law.png',
 		"stamp-chap" = 'icons/stamp_icons/large_stamp-chap.png',
-		"stamp-mime" = 'icons/stamp_icons/large_stamp-mime.png',
 		"stamp-syndicate" = 'icons/stamp_icons/large_stamp-syndicate.png',
 		"stamp-solgov" = 'icons/stamp_icons/large_stamp-solgov.png',
 		"stamp-inteq" = 'icons/stamp_icons/large_stamp-inteq.png',
@@ -146,6 +147,7 @@
 		"stamp-ngr_fore" = 'icons/stamp_icons/large_stamp-ngr_foreman.png',
 		"stamp-ngr_lieu" = 'icons/stamp_icons/large_stamp-ngr_lieutenant.png',
 		"stamp-ngr_ensign" = 'icons/stamp_icons/large_stamp-ngr_ensign.png',
+		"stamp-hardliners" = 'icons/stamp_icons/large_stamp-hardliners.png',
 		"stamp-nt" = 'icons/stamp_icons/large_stamp-nt_generic.png',
 		"stamp-nt_cap" = 'icons/stamp_icons/large_stamp-nt_captain.png',
 		"stamp-nt_fo" = 'icons/stamp_icons/large_stamp-nt_officer.png',
@@ -212,7 +214,10 @@
 		if (icon != 'icons/misc/language.dmi')
 			var/icon_state = initial(L.icon_state)
 			Insert("language-[icon_state]", icon, icon_state=icon_state)
-		..()
+	// [CELADON_EDIT] - Переместил вызов родительского прока из цикла
+	// 		..() [CELADON-EDIT] - ORIGINAL
+	..()
+	// [/CELADON_EDIT]
 
 /datum/asset/simple/lobby
 	assets = list(
@@ -278,7 +283,7 @@
 		"snail" = 'icons/UI_Icons/Achievements/Misc/snail.png',
 		"mining" = 'icons/UI_Icons/Achievements/Skills/mining.png',
 		// [CELADON-ADD] - CELADON_ACHIEVEMENTS
-		"theinnerhell" = 'mod_celadon/_storge_icons/icons/png/theinnerhell.png'
+		"theinnerhell" = 'mod_celadon/_storge_icons/icons/assets/png/theinnerhell.png'
 		// [/CELADON-ADD]
 	)
 
@@ -369,8 +374,8 @@
 				continue
 			I = icon(icon_file, icon_state, SOUTH)
 
-			// computers (and snowflakes) get their screen and keyboard sprites
-			if (ispath(item, /obj/machinery/computer) || ispath(item, /obj/machinery/power/solar_control))
+			// computers get their screen and keyboard sprites
+			if (ispath(item, /obj/machinery/computer))
 				var/obj/machinery/computer/C = item
 				var/screen = initial(C.icon_screen)
 				var/keyboard = initial(C.icon_keyboard)
@@ -487,7 +492,7 @@
 	for (var/style in 1 to length(GLOB.podstyles))
 		// [CELADON-EDIT] - CELADON_ELYSIUMPOD
 		// var/icon_file = 'icons/obj/supplypods.dmi' // CELADON-EDIT - ORIGINAL
-		var/icon_file = 'mod_celadon/_storge_icons/icons/supplypods.dmi'
+		var/icon_file = 'mod_celadon/_storge_icons/icons/structures/supplypods.dmi'
 		// [/CELADON-EDIT]
 		var/states = icon_states(icon_file)
 		if (style == STYLE_SEETHROUGH)

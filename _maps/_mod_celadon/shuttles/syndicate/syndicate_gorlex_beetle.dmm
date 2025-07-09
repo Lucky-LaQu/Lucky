@@ -152,9 +152,7 @@
 /turf/open/floor/plasteel/strongdark,
 /area/ship/cargo)
 "cE" = (
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/window/reinforced/spawner/west,
 /obj/structure/cable{
 	icon_state = "0-8"
@@ -224,9 +222,6 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/table/reinforced,
-/obj/item/storage/box/donkpockets/donkpocketpizza{
-	pixel_y = 7
-	},
 /obj/machinery/light/directional/south{
 	pixel_y = 0;
 	pixel_x = 32;
@@ -234,6 +229,9 @@
 	},
 /obj/effect/turf_decal/spline/fancy/transparent/syndiered{
 	dir = 4
+	},
+/obj/item/reagent_containers/food/snacks/pizza/meat{
+	pixel_y = 6
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
@@ -246,6 +244,11 @@
 	},
 /obj/effect/turf_decal/box/white,
 /obj/structure/curtain,
+/obj/machinery/computer/cryopod/directional/east{
+	dir = 2;
+	pixel_x = 0;
+	pixel_y = -22
+	},
 /turf/open/floor/plasteel/strongdark,
 /area/ship/crew)
 "ez" = (
@@ -265,7 +268,6 @@
 	dir = 5
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
-	filter_types = list("n2","co2","bz","water_vapor","miasma","freon","pluox","tritium","n20","no2","nob");
 	dir = 8
 	},
 /turf/open/floor/plasteel/mono/white{
@@ -285,11 +287,11 @@
 /obj/structure/sign/poster/syndicate/random{
 	pixel_y = 32
 	},
-/obj/structure/ore_box,
 /obj/effect/turf_decal/industrial/outline{
 	color = "#791500"
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/recharge_station,
 /turf/open/floor/plasteel/patterned/grid{
 	color = "#777777"
 	},
@@ -340,18 +342,13 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/industrial/outline/yellow,
-/obj/item/clothing/suit/space/hardsuit/syndi/ngr{
-	armor = list("melee" = 35, "bullet" = 25, "laser" = 50, "energy" = 50, "bomb" = 30, "bio" = 100, "rad" = 50, "fire" = 50, "acid" = 70);
-	name = "reflector beige-red hardsuit";
-	desc = "A standardized dual-mode hardsuit derived from ICW-era advanced special operations hardsuits, its red partly replaced by beige. It is in EVA mode. Manufactured by Second Battlegroup. It has special reflective plates under which there is a lining against blunt impacts, it is better at reflecting lasers, but it does not perform well against ballistics.";
-	alt_desc = "A standardized dual-mode hardsuit derived from ICW-era advanced special operations hardsuits, its red partly replaced by beige. It is in EVA mode. Manufactured by Second Battlegroup. It has special reflective plates under which there is a lining against blunt impacts, it is better at reflecting lasers, but it does not perform well against ballistics."
-	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/tank/jetpack/oxygen/harness,
 /obj/item/clothing/mask/balaclava/ngr{
 	name = "gorlex combat balaclava"
 	},
+/obj/item/clothing/suit/space/hardsuit/syndi/cybersun,
+/obj/item/tank/internals/oxygen,
 /turf/open/floor/plasteel/patterned/grid{
 	color = "#777777"
 	},
@@ -379,9 +376,7 @@
 /area/ship/bridge)
 "gS" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/window/reinforced/spawner/west,
 /obj/structure/cable{
 	icon_state = "0-8"
@@ -447,10 +442,6 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
-"iy" = (
-/obj/machinery/porta_turret/ship/syndicate/weak,
-/turf/closed/wall/mineral/plastitanium,
-/area/ship/crew/toilet)
 "iD" = (
 /obj/machinery/vending/tool{
 	all_items_free = 1
@@ -516,8 +507,8 @@
 /turf/open/floor/plasteel/mono/white,
 /area/ship/medical)
 "jV" = (
-/obj/machinery/porta_turret/ship/syndicate/heavy{
-	dir = 5
+/obj/machinery/porta_turret/ship/syndicate/ballistic/heavy{
+	id = "Bettle_grid"
 	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/bridge)
@@ -592,10 +583,18 @@
 	name = "ammunition locker";
 	req_one_access_txt = "1"
 	},
+/obj/item/melee/energy/sword/saber/red{
+	pixel_x = 15;
+	pixel_y = 7
+	},
 /obj/item/stock_parts/cell/gun/kalix,
 /obj/item/stock_parts/cell/gun/kalix,
 /obj/item/stock_parts/cell/gun/kalix,
 /obj/item/stock_parts/cell/gun/kalix,
+/obj/item/shield/riot/tele{
+	pixel_x = -7;
+	pixel_y = -1
+	},
 /turf/open/floor/plasteel/patterned/grid{
 	color = "#777777"
 	},
@@ -692,19 +691,14 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/industrial/outline/yellow,
-/obj/item/clothing/suit/space/hardsuit/syndi/ngr{
-	armor = list("melee" = 35, "bullet" = 25, "laser" = 50, "energy" = 50, "bomb" = 30, "bio" = 100, "rad" = 50, "fire" = 50, "acid" = 70);
-	name = "reflector beige-red hardsuit";
-	desc = "A standardized dual-mode hardsuit derived from ICW-era advanced special operations hardsuits, its red partly replaced by beige. It is in EVA mode. Manufactured by Second Battlegroup. It has special reflective plates under which there is a lining against blunt impacts, it is better at reflecting lasers, but it does not perform well against ballistics.";
-	alt_desc = "A standardized dual-mode hardsuit derived from ICW-era advanced special operations hardsuits, its red partly replaced by beige. It is in EVA mode. Manufactured by Second Battlegroup. It has special reflective plates under which there is a lining against blunt impacts, it is better at reflecting lasers, but it does not perform well against ballistics."
-	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/tank/jetpack/oxygen/harness,
 /obj/item/clothing/mask/balaclava/ngr{
 	name = "gorlex combat balaclava"
 	},
+/obj/item/clothing/suit/space/hardsuit/syndi/cybersun,
+/obj/item/tank/internals/oxygen,
 /turf/open/floor/plasteel/patterned/grid{
 	color = "#777777"
 	},
@@ -732,20 +726,17 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/power/ship_gravity,
 /obj/machinery/light/small/directional/east,
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
 "nS" = (
 /obj/effect/turf_decal/industrial/warning{
-	dir = 8
+	dir = 1
 	},
 /obj/docking_port/mobile{
 	callTime = 250;
-	dir = 4;
 	launch_status = 0;
-	port_direction = 8;
+	port_direction = 4;
 	preferred_direction = 4
 	},
 /turf/open/floor/engine/hull/reinforced,
@@ -780,7 +771,6 @@
 	name = "Gorlex armor vest"
 	},
 /obj/item/tank/jetpack/suit,
-/obj/item/stock_parts/cell/gun/upgraded,
 /obj/item/melee/classic_baton/telescopic,
 /obj/item/clothing/gloves/tackler/combat/insulated,
 /obj/item/clothing/under/syndicate/ngr/fatigues{
@@ -795,12 +785,17 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 4
 	},
-/obj/item/gun/ballistic/automatic/assault/e40,
-/obj/item/ammo_box/magazine/e40,
-/obj/item/ammo_box/magazine/e40,
 /obj/item/storage/backpack/duffelbag/syndie,
-/obj/item/storage/box/ammo/c299,
 /obj/item/clothing/glasses/thermal/syndi,
+/obj/item/gun/energy/kalix/pgf/heavy/sniper{
+	fire_delay = 13;
+	gun_firemodes = list("auto");
+	default_firemode = "auto"
+	},
+/obj/item/stock_parts/cell/gun/pgf,
+/obj/item/stock_parts/cell/gun/pgf,
+/obj/item/stock_parts/cell/gun/pgf,
+/obj/item/tank/jetpack/suit,
 /turf/open/floor/plasteel/patterned/grid{
 	color = "#777777"
 	},
@@ -887,10 +882,10 @@
 	},
 /obj/machinery/light/small/directional/west,
 /obj/effect/turf_decal/industrial/hatch/yellow,
-/obj/machinery/atmospherics/components/unary/portables_connector/layer2{
-	dir = 4
+/obj/machinery/atmospherics/components/unary/tank/air{
+	dir = 4;
+	piping_layer = 2
 	},
-/obj/machinery/portable_atmospherics/canister/air,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
 "oS" = (
@@ -899,7 +894,7 @@
 	},
 /obj/effect/turf_decal/corner/opaque/black/diagonal,
 /obj/structure/chair/sofa/olive/right{
-	dir = 8
+	dir = 4
 	},
 /obj/structure/extinguisher_cabinet/directional/west,
 /obj/effect/turf_decal/spline/fancy/transparent/syndiered{
@@ -981,9 +976,7 @@
 "qh" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
+/obj/machinery/power/smes/shuttle/precharged,
 /obj/structure/window/reinforced/spawner/west,
 /obj/structure/cable{
 	icon_state = "0-8"
@@ -1097,9 +1090,7 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 1
 	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
-	dir = 2
-	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /turf/open/floor/plasteel/strongdark,
 /area/ship/cargo)
 "sK" = (
@@ -1109,7 +1100,6 @@
 /obj/effect/turf_decal/borderfloorwhite,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/door/airlock/hatch{
-	dir = 2;
 	name = "Medbay"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
@@ -1151,9 +1141,11 @@
 /turf/template_noop,
 /area/template_noop)
 "to" = (
-/obj/machinery/porta_turret/ship/syndicate/weak,
+/obj/machinery/porta_turret/ship/syndicate/weak{
+	id = "Bettle_grid"
+	},
 /turf/closed/wall/mineral/plastitanium,
-/area/ship/medical)
+/area/ship/bridge)
 "tr" = (
 /obj/structure/sign/poster/contraband/atmosia_independence{
 	pixel_x = -32
@@ -1196,16 +1188,14 @@
 	dir = 1
 	},
 /obj/machinery/modular_computer/console/preset/command{
-	dir = 1;
-	icon_state = "console-off"
+	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/button/door{
 	dir = 1;
 	id = "Bettle_Windows";
 	name = "Windows shutters";
-	pixel_y = -21;
-	req_access = null
+	pixel_y = -21
 	},
 /obj/machinery/firealarm/directional/east,
 /obj/effect/turf_decal/spline/fancy/transparent/syndiered{
@@ -1297,18 +1287,13 @@
 	},
 /obj/effect/turf_decal/siding/thinplating/dark,
 /obj/effect/turf_decal/industrial/outline/yellow,
-/obj/item/clothing/suit/space/hardsuit/syndi/ngr{
-	armor = list("melee" = 35, "bullet" = 25, "laser" = 50, "energy" = 50, "bomb" = 30, "bio" = 100, "rad" = 50, "fire" = 50, "acid" = 70);
-	name = "reflector beige-red hardsuit";
-	desc = "A standardized dual-mode hardsuit derived from ICW-era advanced special operations hardsuits, its red partly replaced by beige. It is in EVA mode. Manufactured by Second Battlegroup. It has special reflective plates under which there is a lining against blunt impacts, it is better at reflecting lasers, but it does not perform well against ballistics.";
-	alt_desc = "A standardized dual-mode hardsuit derived from ICW-era advanced special operations hardsuits, its red partly replaced by beige. It is in EVA mode. Manufactured by Second Battlegroup. It has special reflective plates under which there is a lining against blunt impacts, it is better at reflecting lasers, but it does not perform well against ballistics."
-	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light/directional/south,
-/obj/item/tank/jetpack/oxygen/harness,
 /obj/item/clothing/mask/balaclava/ngr{
 	name = "gorlex combat balaclava"
 	},
+/obj/item/clothing/suit/space/hardsuit/syndi/cybersun,
+/obj/item/tank/internals/oxygen,
 /turf/open/floor/plasteel/patterned/grid{
 	color = "#777777"
 	},
@@ -1497,8 +1482,7 @@
 "wk" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered,
 /obj/machinery/holopad/emergency/command{
-	pixel_x = 1;
-	pixel_y = 0
+	pixel_x = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
@@ -1531,9 +1515,7 @@
 /obj/effect/turf_decal/corner/opaque/beige{
 	dir = 10
 	},
-/obj/effect/turf_decal/trimline/opaque/syndiered/line{
-	dir = 2
-	},
+/obj/effect/turf_decal/trimline/opaque/syndiered/line,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 1
@@ -1574,9 +1556,7 @@
 /obj/effect/turf_decal/corner/opaque/syndiered/diagonal{
 	dir = 8
 	},
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/south,
 /obj/machinery/light_switch{
 	dir = 1;
@@ -1680,9 +1660,6 @@
 	},
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/machinery/suit_storage_unit/inherit/industrial,
-/obj/item/clothing/suit/space/hardsuit/syndi/ngr{
-	armor = list("melee" = 40, "bullet" = 30, "laser" = 40, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 50, "acid" = 90)
-	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -1693,6 +1670,7 @@
 /obj/item/clothing/mask/balaclava/ngr{
 	name = "gorlex combat balaclava"
 	},
+/obj/item/clothing/suit/space/hardsuit/syndi/cybersun,
 /turf/open/floor/plasteel/patterned/grid{
 	color = "#777777"
 	},
@@ -1740,6 +1718,17 @@
 /obj/effect/turf_decal/spline/fancy/transparent/syndiered{
 	dir = 5
 	},
+/obj/item/storage/fancy/egg_box,
+/obj/item/reagent_containers/condiment/milk,
+/obj/item/reagent_containers/condiment/milk,
+/obj/item/reagent_containers/condiment/flour,
+/obj/item/reagent_containers/condiment/flour,
+/obj/item/reagent_containers/condiment/rice,
+/obj/item/reagent_containers/condiment/rice,
+/obj/item/reagent_containers/food/snacks/meat/slab,
+/obj/item/reagent_containers/food/snacks/meat/slab,
+/obj/item/reagent_containers/food/snacks/meat/slab,
+/obj/item/reagent_containers/food/snacks/meat/slab,
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
 "ze" = (
@@ -1812,17 +1801,11 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/gun/energy/laser/e10,
-/obj/item/gun/energy/laser/e10,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 4
 	},
-/obj/item/gun/energy/laser{
-	manufacturer = "the CyberSun logo"
-	},
-/obj/item/gun/energy/laser{
-	manufacturer = "the CyberSun logo"
-	},
+/obj/item/gun/energy/kalix,
+/obj/item/gun/energy/kalix,
 /turf/open/floor/plasteel/patterned/grid{
 	color = "#777777"
 	},
@@ -1899,8 +1882,7 @@
 /area/ship/external)
 "BP" = (
 /obj/effect/turf_decal/corner/opaque/syndiered/half{
-	dir = 8;
-	pixel_x = 16
+	dir = 4
 	},
 /obj/effect/turf_decal/spline/fancy/transparent/syndiered{
 	dir = 8
@@ -2053,7 +2035,6 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 9
 	},
-/obj/machinery/portable_atmospherics/canister/air,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
 "Ep" = (
@@ -2244,15 +2225,12 @@
 /obj/effect/turf_decal/corner/opaque/beige{
 	dir = 10
 	},
-/obj/effect/turf_decal/trimline/opaque/syndiered/line{
-	dir = 2
-	},
+/obj/effect/turf_decal/trimline/opaque/syndiered/line,
 /obj/machinery/button/door{
 	dir = 1;
 	id = "Bettle_Shut";
 	name = "Airlock shutters";
-	pixel_y = -21;
-	req_access = null
+	pixel_y = -21
 	},
 /turf/open/floor/plasteel/white{
 	color = "#444547"
@@ -2262,9 +2240,7 @@
 /obj/effect/turf_decal/corner/opaque/beige{
 	dir = 10
 	},
-/obj/effect/turf_decal/trimline/opaque/syndiered/line{
-	dir = 2
-	},
+/obj/effect/turf_decal/trimline/opaque/syndiered/line,
 /obj/machinery/light/directional/south,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 1
@@ -2399,9 +2375,7 @@
 /obj/structure/cable{
 	icon_state = "1-4"
 	},
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
+/obj/structure/cable,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
 "IY" = (
@@ -2640,6 +2614,11 @@
 	},
 /obj/effect/turf_decal/box/white,
 /obj/structure/curtain,
+/obj/machinery/computer/cryopod/directional/east{
+	dir = 2;
+	pixel_x = 0;
+	pixel_y = -22
+	},
 /turf/open/floor/plasteel/strongdark,
 /area/ship/crew)
 "Nw" = (
@@ -2748,7 +2727,7 @@
 /obj/structure/extinguisher_cabinet/directional/west{
 	pixel_y = -8
 	},
-/obj/item/kinetic_crusher/syndie_crusher,
+/obj/item/melee/sledgehammer/gorlex,
 /turf/open/floor/plasteel/strongdark,
 /area/ship/cargo)
 "OO" = (
@@ -2766,8 +2745,7 @@
 /area/ship/hallway/central)
 "Po" = (
 /obj/effect/turf_decal/corner/opaque/syndiered/half{
-	dir = 8;
-	pixel_x = 16
+	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -2782,9 +2760,7 @@
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/bridge)
 "Pz" = (
-/obj/machinery/power/shuttle/engine/electric{
-	dir = 4
-	},
+/obj/machinery/power/shuttle/engine/electric,
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
@@ -2809,9 +2785,7 @@
 /obj/effect/turf_decal/corner/opaque/beige{
 	dir = 10
 	},
-/obj/effect/turf_decal/trimline/opaque/syndiered/line{
-	dir = 2
-	},
+/obj/effect/turf_decal/trimline/opaque/syndiered/line,
 /turf/open/floor/plasteel/white{
 	color = "#444547"
 	},
@@ -2834,21 +2808,13 @@
 /obj/effect/turf_decal/corner/opaque/beige/diagonal{
 	dir = 8
 	},
-/obj/structure/closet/crate/bin{
-	pixel_y = 0
-	},
+/obj/structure/closet/crate/bin,
 /obj/machinery/airalarm/directional/east,
 /obj/effect/turf_decal/spline/fancy/transparent/syndiered{
 	dir = 4
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
-"Rn" = (
-/obj/machinery/porta_turret/ship/syndicate/heavy{
-	dir = 6
-	},
-/turf/closed/wall/mineral/plastitanium,
-/area/ship/crew)
 "Rv" = (
 /obj/effect/turf_decal/industrial/fire/cee,
 /obj/effect/turf_decal/siding/thinplating/dark/end,
@@ -2880,8 +2846,9 @@
 /obj/item/storage/backpack/industrial,
 /obj/item/spacecash/bundle/c200,
 /obj/item/spacecash/bundle/c50,
-/obj/item/gun/energy/e_gun/e11,
 /obj/item/clothing/shoes/magboots/syndie,
+/obj/item/gun/energy,
+/obj/item/stock_parts/cell/gun/upgraded,
 /turf/open/floor/plasteel/patterned/grid{
 	color = "#777777"
 	},
@@ -3118,6 +3085,7 @@
 /obj/item/storage/backpack/satchel/med,
 /obj/item/spacecash/bundle/c200,
 /obj/item/spacecash/bundle/c50,
+/obj/item/defibrillator/loaded,
 /turf/open/floor/plasteel/patterned/grid{
 	color = "#777777"
 	},
@@ -3400,7 +3368,7 @@ ta
 ta
 ta
 hi
-iy
+to
 Ic
 JG
 JG
@@ -3567,7 +3535,7 @@ sZ
 Iv
 YP
 cs
-Ks
+nS
 BW
 ta
 ta
@@ -3743,7 +3711,7 @@ mL
 pC
 tx
 tx
-Rn
+jV
 ta
 ta
 ta
@@ -3802,7 +3770,7 @@ ta
 ta
 ta
 BC
-nS
+BC
 BC
 BC
 ta

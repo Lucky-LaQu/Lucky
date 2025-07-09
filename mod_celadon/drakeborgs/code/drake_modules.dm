@@ -7,7 +7,7 @@
 	lefthand_file = 'icons/mob/inhands/misc/devices_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/misc/devices_righthand.dmi'
 	flags_1 = CONDUCT_1
-	cyborg_icon_override = 'mod_celadon/_storge_icons/icons/drakeborg_vr-1.dmi'
+	cyborg_icon_override = 'mod_celadon/_storge_icons/icons/other/borgs/drakeborg_vr-1.dmi'
 	drakerest = TRUE
 
 /obj/item/robot_module/drake/medical
@@ -138,9 +138,10 @@
 		/obj/item/storage/bag/sheetsnatcher/borg,
 		/obj/item/gun/energy/kinetic_accelerator/cyborg,
 		/obj/item/gps/cyborg,
-		/obj/item/stack/marker_beacon)
+		/obj/item/stack/marker_beacon,
+		/obj/item/t_scanner/adv_mining_scanner/cyborg)
 	emag_modules = list(/obj/item/borg/stun)
 	cyborg_base_icon = "drakemine"
 	moduleselect_icon = "miner"
 	hat_offset = 0
-	var/obj/item/t_scanner/adv_mining_scanner/cyborg/mining_scanner
+

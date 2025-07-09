@@ -11,9 +11,9 @@
 
 /obj/item/mecha_parts/proc/try_attach_part(mob/user, obj/mecha/M) //For attaching parts to a finished mech
 	if(!user.transferItemToLoc(src, M))
-		to_chat(user, "<span class='warning'>\The [src] is stuck to your hand, you cannot put it in \the [M]!</span>")
+		to_chat(user, span_warning("\The [src] is stuck to your hand, you cannot put it in \the [M]!"))
 		return FALSE
-	user.visible_message("<span class='notice'>[user] attaches [src] to [M].</span>", "<span class='notice'>You attach [src] to [M].</span>")
+	user.visible_message(span_notice("[user] attaches [src] to [M]."), span_notice("You attach [src] to [M]."))
 	return TRUE
 
 /obj/item/mecha_parts/part/try_attach_part(mob/user, obj/mecha/M)
@@ -138,6 +138,16 @@
 	name = "\improper 500 Series armor plates"
 	desc = "A set of armor plates designed for the 500 Series. Designed to effectively deflect damage with a lightweight construction."
 	icon_state = "gygax_armor"
+
+/obj/item/mecha_parts/chassis/mp_gygax
+	name = "\improper MP-Gygax chassis"
+	construct_type = /datum/component/construction/unordered/mecha_chassis/mpgygax
+
+/obj/item/mecha_parts/part/mpgygax_armor
+	gender = PLURAL
+	name = "\improper MP-Gygax armor plates"
+	desc = "A set of stripped down armor plates designed for the MP-Gygax. Designed to moderately deflect damage with a lightweight construction."
+	icon_state = "mpgygax_armor"
 
 
 //////////// Durand
