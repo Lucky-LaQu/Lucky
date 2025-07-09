@@ -6,14 +6,13 @@
 	description = "We have the technology to replace him."
 	prereq_ids = list("robotics")
 	design_ids = list(
-		"suit_storage_unit",
+		"ssu",
 		"mod_shell",
 		"mod_chestplate",
 		"mod_helmet",
 		"mod_gauntlets",
 		"mod_boots",
 		"mod_plating_standard",
-		"mod_plating_civilian",
 		"mod_paint_kit",
 		"mod_storage",
 		"mod_plasma",
@@ -35,16 +34,18 @@
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
 
-/datum/techweb_node/mod_entertainment
-	id = "mod_entertainment"
-	display_name = "Entertainment Suit Equipment"
-	description = "Modules for protection against low-humor environments."
-	prereq_ids = list("mod_suit")
-	design_ids = list(
-		"mod_bikehorn",
-		"mod_microwave_beam",
-	)
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
+// Модули mod_bikehorn и mod_microwave_beam отключены, так как вызывали рантайм. Причина: Отсутствие  design_ids.
+
+// /datum/techweb_node/mod_entertainment
+// 	id = "mod_entertainment"
+// 	display_name = "Entertainment Suit Equipment"
+// 	description = "Modules for protection against low-humor environments."
+// 	prereq_ids = list("mod_suit")
+// 	design_ids = list(
+// 		"mod_bikehorn",
+// 		"mod_microwave_beam",
+// 	)
+// 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
 
 /datum/techweb_node/mod_science
 	id = "mod_science"
@@ -124,7 +125,7 @@
 	id = "mod_anomaly"
 	display_name = "Anomalock Modular Suit"
 	description = "Modules for MODsuits that require anomaly cores to function."
-	prereq_ids = list("mod_science, mod_engi_adv", "anomaly_research")
+	prereq_ids = list("mod_science", "mod_engi_adv", "anomaly_research")
 	design_ids = list(
 		"mod_antigrav",
 		"mod_teleporter",
